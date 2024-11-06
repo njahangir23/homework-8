@@ -1,0 +1,42 @@
+1. Write a query string with 2 values for www.example.com
+    www.example.com?location=newyork&country=america
+    location and country are the keys, new york and america are the values
+
+2. What is meant by escaping a character?
+   Escaping a character means using a special syntax to ensure certain characters are interpreted literally rather than 
+   as part of the code syntax. For example, in URLs, special characters like &, ?, and = are escaped using percent-
+   encoding (%20 for space, %26 for &, etc.) to prevent confusion with URL syntax.
+
+3. What are the following HTTP status and their meanings:
+     a. 200
+        Ok: The request was successful, and the server returned the requested data.
+
+     b. 400
+       Bad Request: The request was invalid, often due to malformed syntax.
+
+     c. 401
+        Unauthorized: The client must authenticate itself to get the requested response.
+
+     d. 403
+        Forbidden: The client’s request is understood by the server, but it refuses to authorize it.
+
+     e. 404
+        Not Found: The server can’t find the requested resource.
+
+     f. 500
+        Internal Server Error: A generic server error occurred, often due to a server malfunction.
+
+4. Why do we need to validate data?
+   Data validation is essential for ensuring the integrity, consistency, and security of data input from users. It helps
+   prevent errors and security vulnerabilities; for example, validating and sanitizing inputs helps prevent Cross-Site 
+   Scripting (XSS) attacks, where attackers inject malicious scripts into a web application. If data isn’t validated, 
+   harmful code could be executed in users’ browsers, compromising sensitive information. Data validation also ensures 
+   data consistency and reliability. It makes sure the data is in the correct format, making it easier to store, process, 
+   and retrieve without errors. It also helps improve user experience, providing immediate feedback on incorrect inputs, 
+   helping users enter the correct information.
+
+5. What are sessions and cookies? What do they do?
+   Cookies are small pieces of data stored on the client side, allowing websites to remember information across requests
+   (e.g., login state, user preferences). They are in the frontend of a website.
+   Sessions are server-side storage that tracks user interactions across multiple requests, often identified by a 
+   session ID stored in a cookie. they are used in the backend of a website.
