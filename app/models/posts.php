@@ -19,7 +19,7 @@ class Post {
 
         if (!empty($params['title'])) {
             return array_filter($allposts, function ($post) use ($params) {
-                if($user['title']===$params['title']){
+                if($post['title']===$params['title']){
                     return $post;
                 };
                 return null;

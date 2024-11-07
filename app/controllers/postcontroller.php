@@ -1,10 +1,10 @@
 <?php
 
 namespace app\controllers;
-
 use app\models\Post;
 
-class PostController {
+class PostController
+ {
 
     public function getPosts() {
         $params = [
@@ -38,7 +38,7 @@ class PostController {
 
         $returnData = [
             'title' => $title,
-            'content' => $content;
+            'content' => $content,
         ];
         echo json_encode($returnData);
         exit();
